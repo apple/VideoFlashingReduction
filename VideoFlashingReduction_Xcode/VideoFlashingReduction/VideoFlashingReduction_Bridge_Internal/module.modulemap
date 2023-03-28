@@ -1,0 +1,6 @@
+
+module VideoFlashingReduction_Bridge_Internal [system] {
+    header "../SharedMetalHeader.h"
+    header "../SharedBridgeHeader.h"
+    export *
+}

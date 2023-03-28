@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		29043E75299A0F7A00AB6961 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29043E74299A0F7A00AB6961 /* main.swift */; };
+		29043E93299A12FB00AB6961 /* VideoFlashingReduction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29043E8B299A12C500AB6961 /* VideoFlashingReduction.framework */; };
+		29043E94299A12FB00AB6961 /* VideoFlashingReduction.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 29043E8B299A12C500AB6961 /* VideoFlashingReduction.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		29043E98299A131600AB6961 /* UMFKernel-Data.txt in Resources */ = {isa = PBXBuildFile; fileRef = 29043E7B299A0FFF00AB6961 /* UMFKernel-Data.txt */; };
+		29043E99299A17F800AB6961 /* VideoFlashingReduction_Bridge_Internal in Resources */ = {isa = PBXBuildFile; fileRef = 29043E81299A100D00AB6961 /* VideoFlashingReduction_Bridge_Internal */; };
+		29043E9A299A19AE00AB6961 /* VideoProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29043E82299A100D00AB6961 /* VideoProcessor.swift */; };
+		29043E9C299A19B600AB6961 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 29043E7C299A0FFF00AB6961 /* Shaders.metal */; };
+		29043E9D299A19B600AB6961 /* UMFKernels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29043E80299A100D00AB6961 /* UMFKernels.swift */; };
+		29043E9F299A1A0D00AB6961 /* movie.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 29043E9E299A1A0D00AB6961 /* movie.mp4 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		29043E95299A12FB00AB6961 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 295240212968B19900CF5AEE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29043E8A299A12C500AB6961;
+			remoteInfo = VideoFlashingReduction;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		29043E70299A0F7A00AB6961 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		29043E97299A12FB00AB6961 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				29043E94299A12FB00AB6961 /* VideoFlashingReduction.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		29043E72299A0F7A00AB6961 /* detectflashing */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = detectflashing; sourceTree = BUILT_PRODUCTS_DIR; };
+		29043E74299A0F7A00AB6961 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		29043E7A299A0FFF00AB6961 /* SharedMetalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedMetalHeader.h; sourceTree = "<group>"; };
+		29043E7B299A0FFF00AB6961 /* UMFKernel-Data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "UMFKernel-Data.txt"; sourceTree = "<group>"; };
+		29043E7C299A0FFF00AB6961 /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		29043E80299A100D00AB6961 /* UMFKernels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UMFKernels.swift; sourceTree = "<group>"; };
+		29043E81299A100D00AB6961 /* VideoFlashingReduction_Bridge_Internal */ = {isa = PBXFileReference; lastKnownFileType = folder; path = VideoFlashingReduction_Bridge_Internal; sourceTree = "<group>"; };
+		29043E82299A100D00AB6961 /* VideoProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoProcessor.swift; sourceTree = "<group>"; };
+		29043E85299A123600AB6961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		29043E8B299A12C500AB6961 /* VideoFlashingReduction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VideoFlashingReduction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29043E9E299A1A0D00AB6961 /* movie.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = movie.mp4; sourceTree = "<group>"; };
+		418A8F81299AE25B00897079 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29043E6F299A0F7A00AB6961 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29043E93299A12FB00AB6961 /* VideoFlashingReduction.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29043E88299A12C500AB6961 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29043E92299A12FB00AB6961 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		295240202968B19900CF5AEE = {
+			isa = PBXGroup;
+			children = (
+				2952402B2968B19900CF5AEE /* VideoFlashingReduction */,
+				2952402A2968B19900CF5AEE /* Products */,
+				29043E92299A12FB00AB6961 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2952402A2968B19900CF5AEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				29043E72299A0F7A00AB6961 /* detectflashing */,
+				29043E8B299A12C500AB6961 /* VideoFlashingReduction.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2952402B2968B19900CF5AEE /* VideoFlashingReduction */ = {
+			isa = PBXGroup;
+			children = (
+				418A8F81299AE25B00897079 /* README.md */,
+				29043E74299A0F7A00AB6961 /* main.swift */,
+				29043E82299A100D00AB6961 /* VideoProcessor.swift */,
+				29043E80299A100D00AB6961 /* UMFKernels.swift */,
+				29043E7A299A0FFF00AB6961 /* SharedMetalHeader.h */,
+				29043E7C299A0FFF00AB6961 /* Shaders.metal */,
+				29043E81299A100D00AB6961 /* VideoFlashingReduction_Bridge_Internal */,
+				29E53BF22968EDB900D31441 /* Resources */,
+			);
+			path = VideoFlashingReduction;
+			sourceTree = "<group>";
+		};
+		29E53BF22968EDB900D31441 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				29043E7B299A0FFF00AB6961 /* UMFKernel-Data.txt */,
+				29043E85299A123600AB6961 /* Info.plist */,
+				29043E9E299A1A0D00AB6961 /* movie.mp4 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		29043E86299A12C500AB6961 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		29043E71299A0F7A00AB6961 /* detectflashing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29043E76299A0F7A00AB6961 /* Build configuration list for PBXNativeTarget "detectflashing" */;
+			buildPhases = (
+				29043E6E299A0F7A00AB6961 /* Sources */,
+				29043E6F299A0F7A00AB6961 /* Frameworks */,
+				29043E70299A0F7A00AB6961 /* CopyFiles */,
+				29043E97299A12FB00AB6961 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				29043E96299A12FB00AB6961 /* PBXTargetDependency */,
+			);
+			name = detectflashing;
+			productName = flashinglightsdetection;
+			productReference = 29043E72299A0F7A00AB6961 /* detectflashing */;
+			productType = "com.apple.product-type.tool";
+		};
+		29043E8A299A12C500AB6961 /* VideoFlashingReduction */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29043E8F299A12C500AB6961 /* Build configuration list for PBXNativeTarget "VideoFlashingReduction" */;
+			buildPhases = (
+				29043E86299A12C500AB6961 /* Headers */,
+				29043E87299A12C500AB6961 /* Sources */,
+				29043E88299A12C500AB6961 /* Frameworks */,
+				29043E89299A12C500AB6961 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VideoFlashingReduction;
+			productName = VideoFlashingReduction;
+			productReference = 29043E8B299A12C500AB6961 /* VideoFlashingReduction.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		295240212968B19900CF5AEE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					29043E71299A0F7A00AB6961 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					29043E8A299A12C500AB6961 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 295240242968B19900CF5AEE /* Build configuration list for PBXProject "VideoFlashingReduction" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 295240202968B19900CF5AEE;
+			productRefGroup = 2952402A2968B19900CF5AEE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				29043E71299A0F7A00AB6961 /* detectflashing */,
+				29043E8A299A12C500AB6961 /* VideoFlashingReduction */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		29043E89299A12C500AB6961 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29043E98299A131600AB6961 /* UMFKernel-Data.txt in Resources */,
+				29043E99299A17F800AB6961 /* VideoFlashingReduction_Bridge_Internal in Resources */,
+				29043E9F299A1A0D00AB6961 /* movie.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29043E6E299A0F7A00AB6961 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29043E75299A0F7A00AB6961 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29043E87299A12C500AB6961 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29043E9C299A19B600AB6961 /* Shaders.metal in Sources */,
+				29043E9A299A19AE00AB6961 /* VideoProcessor.swift in Sources */,
+				29043E9D299A19B600AB6961 /* UMFKernels.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		29043E96299A12FB00AB6961 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 29043E8A299A12C500AB6961 /* VideoFlashingReduction */;
+			targetProxy = 29043E95299A12FB00AB6961 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		29043E77299A0F7A00AB6961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/VideoFlashingReduction/Resources/Info.plist";
+				INFOPLIST_KEY_MetalCaptureEnabled = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = detectflashing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		29043E78299A0F7A00AB6961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/VideoFlashingReduction/Resources/Info.plist";
+				INFOPLIST_KEY_MetalCaptureEnabled = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = detectflashing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		29043E90299A12C500AB6961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_MetalCaptureEnabled = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = apple.VideoFlashingReduction;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/VideoFlashingReduction/VideoFlashingReduction_Bridge_Internal";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		29043E91299A12C500AB6961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_MetalCaptureEnabled = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = apple.VideoFlashingReduction;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/VideoFlashingReduction/VideoFlashingReduction_Bridge_Internal";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		295240352968B19A00CF5AEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		295240362968B19A00CF5AEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29043E76299A0F7A00AB6961 /* Build configuration list for PBXNativeTarget "detectflashing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29043E77299A0F7A00AB6961 /* Debug */,
+				29043E78299A0F7A00AB6961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29043E8F299A12C500AB6961 /* Build configuration list for PBXNativeTarget "VideoFlashingReduction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29043E90299A12C500AB6961 /* Debug */,
+				29043E91299A12C500AB6961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		295240242968B19900CF5AEE /* Build configuration list for PBXProject "VideoFlashingReduction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				295240352968B19A00CF5AEE /* Debug */,
+				295240362968B19A00CF5AEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 295240212968B19900CF5AEE /* Project object */;
+}
