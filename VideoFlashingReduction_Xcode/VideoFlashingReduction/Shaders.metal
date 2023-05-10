@@ -372,8 +372,9 @@ cs_compute_risk_pass2(constant ConstBuf& cParams [[buffer(BUFIDX_cParams)]],
     
     // The thread at the end of each buffer updates the buffer and updates startIdx
     if (uTidInTG == (uLen - 1)) {
-        float fEnergy = pow(pResponses[uTGid], curState.fEnergypoolExponent);
-        float fEnergy2 = pow(pResponsesNorm[uTGid], curState.fEnergypoolExponent);
+        float energyExponent = energyPoolExponent;
+        float fEnergy = pow((float)pResponses[uTGid], energyExponent);
+        float fEnergy2 = pow((float)pResponsesNorm[uTGid], energyExponent);
         
         // Update the most recent Energy
         pEnergy[uIdx] = fEnergy;
@@ -387,8 +388,8 @@ cs_compute_risk_pass2(constant ConstBuf& cParams [[buffer(BUFIDX_cParams)]],
             fEnergy2 += fTemp2[i];
         }
         
-        pResults[uTGid * 2] = pow(fEnergy, 1.0 / curState.fEnergypoolExponent);
-        pResults[uTGid * 2 + 1] = pow(fEnergy2, 1.0 / curState.fEnergypoolExponent);
+        pResults[uTGid * 2] = pow(fEnergy, 1.0 / energyExponent);
+        pResults[uTGid * 2 + 1] = pow(fEnergy2, 1.0 / energyExponent);
     }
 }
 

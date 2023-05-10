@@ -55,7 +55,6 @@ public final class VideoProcessor: NSObject {
     private var avl: Float = 0.15
     private var gain: Float = 1.0
     private var energyPoolGammaShape: Float = 2.0
-    private var energyPoolExponent: Float = 2.0
     private var energyPoolGammaScale: Float = 0.15
     private var probabilityPoolGammaShape: Float = 4.0
     private var probabilityPoolExponent: Float = 4.0
@@ -341,7 +340,6 @@ public final class VideoProcessor: NSObject {
                                 fMuAdapt: 1.0 - exp(-1.0 / (tauAdapt * fps)),
                                 fMuMitigation: 1.0 - exp(-1.0 / (tauMitigation * fps)),
                                 fResponseAdjust: pow(sqrt(area * 1.6) / displaySize, 2.0 * cA) * (gain / pow(fps, 1.0 / energyPoolExponent)),
-                                fEnergypoolExponent: energyPoolExponent,
                                 fPoolEnergy: 0,
                                 fPoolEnergy2: 0,
                                 fMitigationContrastFactor: 0,

@@ -53,6 +53,7 @@ static CONST int maxContrastKernelLength = 32;
 static CONST int maxGammaKernelLength = 256;
 static CONST int numAdaptationConditions = 5;
 static CONST float lumaScaler = 1000.0;
+static CONST float energyPoolExponent = 2.0;
 
 // For GPU Buffer Idx
 static CONST int BUFIDX_cParams =        0;
@@ -151,7 +152,6 @@ struct CurState {
     float fMuMitigation;
     
     float fResponseAdjust;
-    float fEnergypoolExponent;
     float fPoolEnergy;
     float fPoolEnergy2;
     
